@@ -1,13 +1,12 @@
-import nltk
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.stem.porter import PorterStemmer
 from nltk.stem.snowball import EnglishStemmer
 from nltk.stem import WordNetLemmatizer
 from flask import abort
-from helpers import ret_success
-from helpers import ret_failure
-from helpers import parse_input
-from helpers import penn_to_wn
+from .helpers import ret_success
+from .helpers import ret_failure
+from .helpers import parse_input
+from .helpers import penn_to_wn
 
 
 

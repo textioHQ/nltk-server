@@ -1,6 +1,6 @@
 import json
 from flask import jsonify
-from errorcodes import error_code
+from .errorcodes import error_code
 
 def ret_success(result):
 	res={}

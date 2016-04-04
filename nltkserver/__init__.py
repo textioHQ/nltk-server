@@ -1,9 +1,8 @@
 import nltk
-import json
 import os
-from helpers import ret_success
-from helpers import ret_failure
-from helpers import parse_input
+from .helpers import ret_success
+from .helpers import ret_failure
+from .helpers import parse_input
 
 nltk.data.path.append(os.getcwd()+'/nltk-data')
 
@@ -14,7 +13,7 @@ def word_tokenize(data):
 		res = nltk.word_tokenize(data)
 		return ret_success(res)
 	except:
-		return ret_failure(701)
+		return ret_failure(702)
 
 
 def sent_tokenize(data):

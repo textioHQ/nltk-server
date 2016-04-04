@@ -1,6 +1,6 @@
 from nltk.tag.stanford import NERTagger
-from helpers import ret_success
-from helpers import ret_failure
+from .helpers import ret_success
+from .helpers import ret_failure
 
 def tagger(data):
 	try:
